@@ -1,6 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import axios from "axios";
+import { getCookie } from "cookies-next";
 export default function Home() {
+  async function login() {
+    const cookie = getCookie("jwt");
+    console.log("jwt:", cookie);
+    const response = await axios.get("http://localhost:3000/api/auth/login", {
+      headers: {
+        Authorization: `Bearer ${cookie}`,
+      },
+    });
+    console.log(response);
+  }
+
   return (
     <>
       <div className="flex justify-between">

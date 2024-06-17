@@ -2,22 +2,28 @@
 import React, { use, useState } from "react";
 import Image from "next/image";
 import { z } from "zod";
+import axios from "axios";
+import { getCookie } from "cookies-next";
+import { useRouter } from "next/navigation";
 
 const LoginWithGoogleButton = () => {
+  const router = useRouter();
   const [email, setemail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const emailSchema = z.string().email();
   const passwordSchema = z.string().min(8);
 
-  function login(formData: { email: string; password: string }) {
-    fetch("localhost:3000/api/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+  async function login(formData: { email: string; password: string }) {
+    const cookie = getCookie("jwt");
+    console.log("jwt:", cookie);
+    const response = await axios.post(
+      "http://localhost:3000/api/auth/login",
+      formData
+    );
+    if (response.status == 200) {
+      router.push("/");
+    }
   }
 
   return (

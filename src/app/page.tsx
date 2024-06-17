@@ -13,8 +13,10 @@ export default function Home() {
           ></Image>
         </div>
         <div className="navRight flex gap-3">
-          <Link href={"./home"}>Home</Link>
+          <Link href={"./"}>Home</Link>
           <Link href={"./aboutus"}>About us</Link>
+          <Link href={"./login"}>Login</Link>
+          <Link href={"./register"}>Register</Link>
         </div>
       </div>
 

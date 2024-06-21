@@ -2,6 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
 import { getCookie } from "cookies-next";
+import ScrollUp from "../../../components/Common/ScrollUp";
+import Hero from "../../../components/Hero";
+import Features from "../../../components/Features";
+import Video from "../../../components/Video";
+import Brands from "../../../components/Brands";
+import AboutSectionOne from "../../../components/About/AboutSectionOne";
+import AboutSectionTwo from "../../../components/About/AboutSectionTwo";
+import Testimonials from "../../../components/Testimonials";
+import Pricing from "../../../components/Pricing";
+import Blog from "../../../components/Blog";
+import Contact from "../../../components/Contact";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Free Next.js Template for Startup and SaaS",
+  description: "This is Home for Startup Nextjs Template",
+  // other metadata
+};
+
 export default function Home() {
   async function login() {
     const cookie = getCookie("jwt");
@@ -16,77 +35,17 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex justify-between">
-        <div className="navLeft">
-          <Image
-            alt="main_logo"
-            src={"/stellar.png"}
-            width={100}
-            height={100}
-          ></Image>
-        </div>
-        <div className="navRight flex gap-3">
-          <Link href={"./"}>Home</Link>
-          <Link href={"./aboutus"}>About us</Link>
-          <Link href={"./login"}>Login</Link>
-          <Link href={"./register"}>Register</Link>
-        </div>
-      </div>
-
-      <div className="body flex flex-col gap-5 mt-20 ">
-        <h2>Edtech News</h2>
-        <div className="mx-auto w-[80%] ">
-          <div className="flex justify-between">
-            <Image
-              alt="main_logo"
-              src={"/stellar.png"}
-              width={200}
-              height={100}
-            ></Image>
-            <Image
-              alt="main_logo"
-              src={"/stellar.png"}
-              width={200}
-              height={100}
-            ></Image>
-            <Image
-              alt="main_logo"
-              src={"/stellar.png"}
-              width={200}
-              height={100}
-            ></Image>
-          </div>
-        </div>
-      </div>
-
-      <div className="beforeFooter mt-20">
-        <div className="w-[80%] mx-auto flex justify-between">
-          <div className="flex flex-col gap-5">
-            <h2 className="font-bold text-xl">About</h2>
-            <p>What We Do</p>
-            <p>Connect With Us</p>
-            <p>Team</p>
-            <p>Careers</p>
-            <p>Partners</p>
-          </div>
-          <div className="flex flex-col gap-5">
-            <h2 className="font-bold text-xl">About</h2>
-            <p>What We Do</p>
-            <p>Connect With Us</p>
-            <p>Team</p>
-            <p>Careers</p>
-            <p>Partners</p>
-          </div>
-          <div className="flex flex-col gap-5">
-            <h2 className="font-bold text-xl">About</h2>
-            <p>What We Do</p>
-            <p>Connect With Us</p>
-            <p>Team</p>
-            <p>Careers</p>
-            <p>Partners</p>
-          </div>
-        </div>
-      </div>
+      <ScrollUp />
+      <Hero />
+      <Features />
+      {/* <Video /> */}
+      {/* <Brands /> */}
+      <AboutSectionOne />
+      <AboutSectionTwo />
+      <Testimonials />
+      <Pricing />
+      <Blog />
+      <Contact />
     </>
   );
 }

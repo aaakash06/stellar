@@ -16,9 +16,11 @@
     "jose": "^5.4.0",
     "jsonwebtoken": "^9.0.2",
     "next": "14.2.4",
+    "next-themes": "^0.3.0",
     "prisma": "^5.15.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-modal-video": "^2.0.2",
     "tw-elements-react": "^1.0.0-alpha-end",
     "zod": "^3.23.8"
   },

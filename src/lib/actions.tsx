@@ -46,7 +46,6 @@ export async function login(formData: { email: string; password: string }) {
     cookies().set({
       name: "jwt",
       value: token,
-      httpOnly: true,
       path: "/",
     });
     redirect("./");

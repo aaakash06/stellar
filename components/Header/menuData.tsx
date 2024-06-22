@@ -10,19 +10,19 @@ const menuData = [
   {
     id: 2,
     title: "About",
-    path: "/aboutus",
+    path: "/",
     newTab: false,
   },
   {
     id: 33,
     title: "Get Involved",
-    path: "/join",
+    path: "/",
     newTab: false,
   },
   {
     id: 3,
     title: "Connect",
-    path: "/contact",
+    path: "/",
     newTab: false,
   },
   // {

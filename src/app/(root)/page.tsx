@@ -14,10 +14,11 @@ import Pricing from "../../../components/Pricing";
 import Blog from "../../../components/Blog";
 import Contact from "../../../components/Contact";
 import { Metadata } from "next";
+import BentoGridDemo from "@/components/Blog/BentoGridDemo";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "Stellar",
+  description: "Personal Studdies",
   // other metadata
 };
 
@@ -42,9 +43,10 @@ export default function Home() {
       {/* <Brands /> */}
       <AboutSectionOne />
       <AboutSectionTwo />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Blog />
-      <Pricing />
+      {/* <BentoGridDemo /> */}
+      {/* <Pricing /> */}
       <Contact />
     </>
   );

@@ -1,13 +1,13 @@
-"use client";
+// "use client";
 
-import { createContext, useContext, useEffect } from "react";
+// import { createContext, useContext, useEffect } from "react";
 
-const AuthContext = createContext(undefined);
+// const AuthContext = createContext(undefined);
 
-export function AuthProvider({ children }: { children: React.ReactNode }) {
-  useEffect(() => {}, []);
+// export function AuthProvider({ children }: { children: React.ReactNode }) {
+//   useEffect(() => {}, []);
 
-  return <AuthContext.Provider value={}>{children}</AuthContext.Provider>;
-}
+//   return <AuthContext.Provider value={}>{children}</AuthContext.Provider>;
+// }
 
-export const useAuth = useContext(AuthContext);
+// export const useAuth = useContext(AuthContext);

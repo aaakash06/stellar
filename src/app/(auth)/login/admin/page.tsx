@@ -2,7 +2,7 @@
 import React, { use, useState } from "react";
 import Image from "next/image";
 import { z } from "zod";
-import { login } from "@/lib/actions";
+import { login } from "@/src/lib/actions";
 const LoginWithGoogleButton = () => {
   const [email, setemail] = useState("");
   const [password, setPassword] = useState("");

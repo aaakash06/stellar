@@ -21,16 +21,16 @@ const Footer = () => {
                     width={140}
                     height={30}
                   /> */}
-                  <div className="relative w-[110px] h-[110px] ">
-                    <Image
-                      src={"/stellarimage-transformed.png"}
-                      alt="logo"
-                      // width={140}
-                      // height={30}
-                      fill
-                      className="w-full dark:invert"
-                    />
-                  </div>
+                  {/* <div className="relative w-[110px] h-[110px] "> */}
+                  <Image
+                    src={"/stellarimage-transformed.png"}
+                    alt="logo"
+                    width={90}
+                    height={90}
+                    // fill
+                    className="w-full dark:invert"
+                  />
+                  {/* </div> */}
                   {/* <Image
                     src="/images/logo/logo.svg"
                     alt="logo"

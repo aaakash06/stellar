@@ -59,7 +59,7 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-2"
                 } `}
               >
-                <div className="relative w-[110px] h-[110px] ">
+                {/* <div className="relative w-[110px] h-[110px] ">
                   <Image
                     src={"/stellarimage-transformed.png"}
                     alt="logo"
@@ -68,7 +68,15 @@ const Header = () => {
                     fill
                     className="w-full dark:invert"
                   />
-                </div>
+                </div> */}
+                <Image
+                  src={"/stellarimage-transformed.png"}
+                  alt="logo"
+                  width={90}
+                  height={90}
+                  // fill
+                  className=" dark:invert"
+                />
                 {/* <Image
                   src="/stellarimage-transformed.png"
                   alt="logo"

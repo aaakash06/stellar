@@ -70,7 +70,7 @@ const Header = () => {
                   />
                 </div> */}
                 <Image
-                  src={"/images/stellarimage-transformed.png"}
+                  src={"/images/log/stellarimage-transformed.png"}
                   alt="logo"
                   width={90}
                   height={90}

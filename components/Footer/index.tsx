@@ -23,7 +23,7 @@ const Footer = () => {
                   /> */}
                   {/* <div className="relative w-[110px] h-[110px] "> */}
                   <Image
-                    src={"/images/log/stellarimage-transformed.png"}
+                    src={"/images/log/logo.png"}
                     alt="logo"
                     width={90}
                     height={90}

@@ -80,7 +80,7 @@ const LoginWithGoogleButton = () => {
                   const passwordResult = passwordSchema.safeParse(password);
                   const emailResult = emailSchema.safeParse(email);
                   if (!passwordResult.success) {
-                    setError("Invalid Password");
+                    setError("Invalid Password. Min length 8.");
                   } else if (!emailResult.success) {
                     setError("Invalid email");
                   } else {
